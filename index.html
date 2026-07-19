@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Barcode</title>
+
+    <script src="https://unpkg.com/@zxing/browser@latest"></script>
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+
+    <style>
+
+    body{
+        font-family:Arial;
+        background:#f4f4f4;
+        text-align:center;
+        margin:30px;
+    }
+
+    #reader{
+        width:500px;
+        margin:auto;
+    }
+
+    #hasil{
+        margin-top:20px;
+        font-size:22px;
+        color:green;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<h2>ABSENSI BARCODE</h2>
+
+<video id="reader" autoplay></video>
+
+<div id="hasil">
+Menunggu Scan...
+</div>
+
+<script>
+
+document.getElementById("hasil").innerHTML =
+"Scanner akan dibuat pada langkah berikutnya.";
+
+</script>
+
+</body>
+</html>
